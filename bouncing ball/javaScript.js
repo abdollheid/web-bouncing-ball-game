@@ -26,11 +26,8 @@ function begin(){
     
     window.addEventListener("click" , handler , false )  ;
     
-    function handler(event){
-        console.log("mouse X: "+event.clientX);
-        console.log("mouse Y: "+event.clientY);
-        console.log("center X: " +c1.x);
-        console.log("center y: "+c1.y);
+        function handler(event){
+            
         var xdif=Math.abs(c1.x - event.clientX) ;
         var xx = xdif * xdif ; 
         var ydif = Math.abs(c1.y -event.clientY) ;
